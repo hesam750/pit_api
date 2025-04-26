@@ -1,0 +1,55 @@
+import { NextResponse } from "next/server";
+import { getServerSession } from "next-auth";
+import prisma from "@/config/database";
+
+export async function POST(req: Request) {
+  try {
+    const session = await getServerSession();
+    if (!session?.user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    const body = await req.json();
+    const { message } = body;
+
+    const chat = await prisma.chat.create({
+      data: {
+        userId: session.user.id,
+        message,
+      },
+    });
+
+    return NextResponse.json(chat);
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 }
+    );
+  }
+}
+
+export async function GET(req: Request) {
+  try {
+    const session = await getServerSession();
+    if (!session?.user) {
+      return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    }
+
+    const chats = await prisma.chat.findMany({
+      where: {
+        userId: session.user.id,
+      },
+      orderBy: {
+        createdAt: "desc",
+      },
+      take: 50,
+    });
+
+    return NextResponse.json(chats);
+  } catch (error) {
+    return NextResponse.json(
+      { error: "Internal Server Error" },
+      { status: 500 }
+    );
+  }
+} 

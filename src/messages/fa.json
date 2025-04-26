@@ -1,0 +1,53 @@
+{
+  "common": {
+    "loading": "در حال بارگذاری...",
+    "error": "خطایی رخ داد",
+    "success": "موفقیت‌آمیز",
+    "save": "ذخیره",
+    "cancel": "انصراف",
+    "delete": "حذف",
+    "edit": "ویرایش",
+    "back": "بازگشت",
+    "next": "بعدی",
+    "submit": "ثبت"
+  },
+  "auth": {
+    "login": "ورود",
+    "register": "ثبت‌نام",
+    "email": "ایمیل",
+    "password": "رمز عبور",
+    "forgotPassword": "رمز عبور را فراموش کرده‌اید؟",
+    "rememberMe": "مرا به خاطر بسپار",
+    "dontHaveAccount": "حساب کاربری ندارید؟",
+    "alreadyHaveAccount": "قبلاً ثبت‌نام کرده‌اید؟"
+  },
+  "dashboard": {
+    "welcome": "خوش آمدید",
+    "services": "خدمات",
+    "bookings": "رزروها",
+    "wallet": "کیف پول",
+    "chat": "چت",
+    "settings": "تنظیمات",
+    "profile": "پروفایل",
+    "logout": "خروج"
+  },
+  "services": {
+    "title": "خدمات ما",
+    "description": "از بین طیف گسترده خدمات خودرویی ما انتخاب کنید",
+    "bookNow": "رزرو کنید",
+    "viewDetails": "مشاهده جزئیات"
+  },
+  "wallet": {
+    "balance": "موجودی",
+    "addFunds": "افزایش موجودی",
+    "transactions": "تراکنش‌ها",
+    "amount": "مبلغ",
+    "add": "افزودن"
+  },
+  "chat": {
+    "messages": "پیام‌ها",
+    "typeMessage": "پیام خود را بنویسید...",
+    "send": "ارسال",
+    "noMessages": "هنوز پیامی وجود ندارد"
+  }
+} 

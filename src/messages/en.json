@@ -1,0 +1,53 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "submit": "Submit"
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "forgotPassword": "Forgot Password?",
+    "rememberMe": "Remember Me",
+    "dontHaveAccount": "Don't have an account?",
+    "alreadyHaveAccount": "Already have an account?"
+  },
+  "dashboard": {
+    "welcome": "Welcome",
+    "services": "Services",
+    "bookings": "Bookings",
+    "wallet": "Wallet",
+    "chat": "Chat",
+    "settings": "Settings",
+    "profile": "Profile",
+    "logout": "Logout"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "Choose from our wide range of automotive services",
+    "bookNow": "Book Now",
+    "viewDetails": "View Details"
+  },
+  "wallet": {
+    "balance": "Balance",
+    "addFunds": "Add Funds",
+    "transactions": "Transactions",
+    "amount": "Amount",
+    "add": "Add"
+  },
+  "chat": {
+    "messages": "Messages",
+    "typeMessage": "Type a message...",
+    "send": "Send",
+    "noMessages": "No messages yet"
+  }
+} 
